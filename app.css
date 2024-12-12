@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  background: #27335d;
+  cursor: crosshair;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+
+#center-image {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+  border-radius: 8px;
+}
+
+span {
+  position: absolute;
+  left: 60%;
+  top: 65%;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 3;
+  user-select: none;
+  pointer-events: none;
+}
